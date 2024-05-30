@@ -7,4 +7,108 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+* {
+  box-sizing: border-box;
+}
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#testoAlternato {
+  border: 2px solid black;
+  padding: 2em;
+  font-size: 2em;
+  line-height: 1.5em;
+  width: fit-content;
+}
+
+.parole {
+  color: rgb(19, 112, 143);
+  position: relative;
+}
+
+.parole i:first-of-type {
+  position: relative;
+  top: -50px;
+}
+
+.parole i:nth-of-type(2) {
+  position: relative;
+  top: -50px;
+  left: -192px;
+}
+
+.parole i:nth-of-type(3) {
+  position: relative;
+  top: -50px;
+  left: -400px;
+}
+
+.cycle1 {
+  animation-name: cycle1;
+}
+
+.cycle2 {
+  animation-name: cycle2;
+}
+.cycle3 {
+  animation-name: cycle3;
+}
+
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cycle1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: 50px;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: 50px;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: 50px;
+  }
+}
