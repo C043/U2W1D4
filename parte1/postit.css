@@ -92,39 +92,71 @@ main {
 /* classi di rotazione */
 .rot1 {
   rotate: 5deg;
+  animation: comparsa 1s backwards 1s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot2 {
   rotate: -7deg;
+  animation: comparsa 1s backwards 5s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot3 {
   rotate: 2deg;
+  animation: comparsa 1s backwards 8s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot4 {
   rotate: -6deg;
+  animation: comparsa 1s backwards 3s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot5 {
   rotate: -8deg;
+  animation: comparsa 1s backwards 7s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot6 {
   rotate: 5deg;
+  animation: comparsa 1s backwards 2s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot7 {
   rotate: -10deg;
+  animation: comparsa 1s backwards 6s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 .rot8 {
   rotate: 2deg;
+  animation: comparsa 1s backwards 4s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
 /* animazione all'hover del mouse */
 .card:hover {
   rotate: 0deg;
-  scale: 1.1;
+  scale: 1.2;
   z-index: 9999;
+}
+
+@keyframes comparsa {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    scale: 1.5;
+  }
+  50% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
 }
