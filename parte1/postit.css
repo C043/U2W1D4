@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Lavagna */
+.blackboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 80vh;
+  width: 90vw;
+  padding: 2em;
+  column-gap: 1em;
+}
+
+/* Postit singoli */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  height: 35%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 253, 136, 1) 0%,
+    rgba(255, 253, 136, 1) 55%,
+    rgba(241, 236, 0, 1) 100%
+  );
+  text-align: center;
+  box-shadow: 5px 5px 15px #00000069;
+  transition: all 300ms;
+}
+
+.card h1 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  font-size: 1.5em;
+}
+
+.lightblue {
+  background: linear-gradient(
+    180deg,
+    rgba(136, 249, 255, 1) 0%,
+    rgba(136, 249, 255, 1) 55%,
+    rgba(0, 180, 190, 1) 100%
+  );
+}
+
+.lightgreen {
+  background: linear-gradient(
+    180deg,
+    rgba(139, 255, 136, 1) 0%,
+    rgba(139, 255, 136, 1) 55%,
+    rgba(0, 190, 17, 1) 100%
+  );
+}
+
+.violet {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 136, 255, 1) 0%,
+    rgba(233, 136, 255, 1) 55%,
+    rgba(129, 0, 190, 1) 100%
+  );
+}
+
+.rot1 {
+  rotate: 5deg;
+}
+
+.rot2 {
+  rotate: -7deg;
+}
+
+.rot3 {
+  rotate: 2deg;
+}
+
+.rot4 {
+  rotate: -6deg;
+}
+
+.rot5 {
+  rotate: -8deg;
+}
+
+.rot6 {
+  rotate: 5deg;
+}
+
+.rot7 {
+  rotate: -10deg;
+}
+
+.rot8 {
+  rotate: 2deg;
+}
+
+.card:hover {
+  rotate: 0deg;
+  scale: 1.1;
+  z-index: 9999;
+}
