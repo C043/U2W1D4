@@ -61,6 +61,25 @@ main {
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 431px) {
+  main {
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .blackboard {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: fit-content;
+  }
+  .card {
+    width: 80%;
+    height: 250px;
+    flex-shrink: 0;
+  }
+}
+
 /* classi di colore */
 .lightblue {
   background: linear-gradient(
@@ -138,6 +157,32 @@ main {
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.63, 0.12);
 }
 
+@media screen and (max-width: 431px) {
+  .rot1 {
+    animation: comparsa 1s backwards 1s;
+  }
+  .rot2 {
+    animation: comparsa 1s backwards 2s;
+  }
+  .rot3 {
+    animation: comparsa 1s backwards 3s;
+  }
+  .rot4 {
+    animation: comparsa 1s backwards 4s;
+  }
+  .rot5 {
+    animation: comparsa 1s backwards 5s;
+  }
+  .rot6 {
+    animation: comparsa 1s backwards 6s;
+  }
+  .rot7 {
+    animation: comparsa 1s backwards 7s;
+  }
+  .rot8 {
+    animation: comparsa 1s backwards 8s;
+  }
+}
 /* animazione all'hover del mouse */
 .card:hover {
   rotate: 0deg;
