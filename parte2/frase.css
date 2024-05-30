@@ -67,6 +67,10 @@ main {
     opacity: 0;
     top: 50px;
   }
+  75% {
+    opacity: 0;
+    top: 50px;
+  }
   100% {
     opacity: 0;
     top: 50px;
